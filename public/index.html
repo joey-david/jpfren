@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../src/styles.css">
+    <title>jpfren</title>
+</head>
+<body>
+    <div id="header">
+        <img class="title_logo" src="../data/jpfren_logo.png" alt="jpfren logo">
+        <h1>JPfren</h1>
+    </div>
+    <!-- <p id="legend">the swiss army knife to fast japanese translation</p> -->
+    <div class="container">
+        <div class="text-section" id="top-section">
+            <input type="text" id="input" placeholder="Enter text here">
+        </div>
+        <div class="text-section" id="bottom-section">
+            <img class="arrow" id="left-arrow" src="../data/left_arrow.png" 
+                alt="left arrow" onclick="nextTranslation('left')">
+            <p id="output"></p>
+            <img class="arrow" id="right-arrow" src="../data/right_arrow.png" 
+                alt="right arrow" onclick="nextTranslation('right')">
+        </div>
+        <p id="translation-info"></p>
+    </div>
+    <div id="footer">
+        <p>© 2024 JPfren, Joey David</p>
+    </div>
+    <script type="module" src="../src/main.js"></script>
+</body>
+</html>
